@@ -4,7 +4,7 @@
         }
 
         #hero{
-            background-image: url(./assets/DSC01486\(1\).jpg);
+            background-image: url(./assets/DAM_tube-1.jpg);
             height: 25vh;
             background-position: center;
             background-attachment: fixed;
@@ -36,5 +36,12 @@
             height: 200vh;
         }
 
+        h2{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
 
     
