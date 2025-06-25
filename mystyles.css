@@ -1,11 +1,6 @@
-*{
-            padding: 10;
-            margin: 0;
-        }
-
-        #hero{
+        #pic{
             background-image: url(./assets/DAM_tube-1.jpg);
-            height: 25vh;
+            height: 15vh;
             background-position: center;
             background-attachment: fixed;
             width: 100vw;
