@@ -1,9 +1,11 @@
+        
+        
         #hero{
             background-image: url(./assets/DAM-6.jpg);
             height: 60vh;
             background-position: center;
             background-attachment: fixed;
-            width: 100vw;
+            width:95vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,15 +26,15 @@
 
         nav{
             display: flex;
-            width: 100%;
+            width: 95vw;
             height: 5vh;
             border: 1px solid blue;
             justify-content: space-around;
             align-items: center;
             color: black;
             background-color:rgb(97, 97, 245);
-            position: sticky;
-            top: 0
+            position: absolute;
+            top: 440px;
         }
 
         body{
@@ -52,6 +54,21 @@
             text-align: center;
             margin-bottom: 25px;
         }
+        .container{
+            display: flex;
+            align-items: space-between;
+            justify-content: center;
+        }
+        .text-left, .text-right{
+            flex-basis: 20%;
+            padding: 5px;
+        }
+        .image-middle{
+            flex-basis: 60%;
+            width: 100%;
+            height: auto;         
+            object-fit: cover;
+        }
 
         label{
             margin-bottom: 15px;
@@ -61,21 +78,37 @@
             display: block;
             margin-bottom: 15px;
         }
+        #first-name:hover{
+            border: 2px solid blue;            
+        }
+        #last-name:hover{
+            border: 2px solid blue;
+        }
+        #phone-number:hover{
+            border-color: red;
+        }
+        #user-name{
 
-        .center{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
+        }
+        #password:focus{
+            outline: none !important;
+            border: 2px orangered;
+        }
+        #confirm-password:focus{
+            outline: none;
+            border: 2px purple !important;
         }
 
 
-        .center{
+        .logo{
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 10%;
+            width: 20%;
         }
+
+
+        
 
 
         
