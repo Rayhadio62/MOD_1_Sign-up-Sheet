@@ -43,20 +43,61 @@
           <form action="text-left">
             <fieldset>
               <legend>Agility Match Registration</legend>
+              
               <lable for="first-name">First Name</lable>
-              <input id="first-name" type="text" placeholder="First Name" />
+              <input id="first-name" type="text" name="first name" placeholder="First Name" />
+
               <lable for="last-name">Last Name</lable>
-              <input id="last-name" type="text" placeholder="Last Name" />
+              <input id="last-name" type="text" name="last name" placeholder="Last Name" />
+
+              <lable for="dob">Date of Birth</lable>
+              <input id="date" type="dob" name="dob" placeholder="Date of Birth" />
+
               <lable for="phone-number">Phone Number</lable>
-              <input id="phone-number" type="number" placeholder="Phone Number" />
+              <input id="phone-number" type="tel" name="phone" placeholder="Phone Number" />
+
               <lable for="email">Email</lable>
               <input id="email" type="email" placeholder="Email" />
+
               <lable for="username">Username</lable>
               <input id="username" type="text" placeholder="Username" />
+
               <lable for="password">Password</lable>
               <input id="password" type="password" placeholder="Password" />
+
               <label for="password">Confirm Password</label>
               <input id=confirm-password type="password" placeholder="Confirm Password" />
+
+              <label for="referral">How did you hear about this event?</label>
+              <select id="referral" name="referral">
+                <option value="">-- Please choose an option --</option>
+                <option value="social">Social Media</option>
+                <option value="friend">Friend or Family</option>
+                <option value="email">Email Newsletter</option>
+                <option value="ads">Online Ads</option>
+                <option value="other">Other</option>
+              </select>
+
+                <!-- Ticket Type -->
+              <label>Ticket Type<span style="color:red">*</span></label>
+                 <div class="radio-group">
+                    <label><input type="radio" name="ticketType" value="general" required> General</label>
+                    <label><input type="radio" name="ticketType" value="vip"> VIP</label>
+                    <label><input type="radio" name="ticketType" value="student"> Student</label>
+                  </div>
+
+                <!-- Newsletter Subscription -->
+                  <div class="checkbox-group">
+              <label><input type="checkbox" name="subscribe" value="yes"> Subscribe to our newsletter</label>
+                  </div>
+
+                <!-- Special Requests -->
+              <label for="comments">Special Requests or Comments</label>
+                  <textarea id="comments" name="comments" rows="4" placeholder="Let us know anything we should be aware of..."></textarea>
+
+    <!-- Buttons -->
+              <button type="submit">Register for Event</button>
+              <button type="reset">Clear Form</button>  
             
             </fieldset>
           </form>
