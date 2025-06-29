@@ -56,18 +56,12 @@
         }
         .container{
             display: flex;
-            align-items: space-between;
             justify-content: center;
         }
-        .text-left, .text-right{
+        .text{
             flex-basis: 20%;
             padding: 5px;
-        }
-        .image-middle{
-            flex-basis: 60%;
-            width: 100%;
-            height: auto;         
-            object-fit: cover;
+        
         }
 
         label{
@@ -79,13 +73,23 @@
             margin-bottom: 15px;
         }
         #first-name:hover{
-            border: 2px solid blue;            
+            border: 2px solid blue;
+            color: red;            
         }
         #last-name:hover{
             border: 2px solid blue;
+            color: red;
+        }
+        #date:hover{
+            border-color: red;
+            color: blue;
         }
         #phone-number:hover{
             border-color: red;
+            color: blue;
+        }
+        #email{
+
         }
         #user-name{
 
