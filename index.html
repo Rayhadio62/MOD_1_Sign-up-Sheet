@@ -39,8 +39,8 @@
       </h3>
 
       <div class= "container">
-        
-          <form class="text" action="text">
+        <div>
+          <form class="text1" action="text">
             <!-- The action attribute is used within the <form> element to specify the URL where the data should be sent when the form is submitted -->
             <fieldset>
               <legend>Agility Match Registration</legend>
@@ -68,7 +68,18 @@
                 <!-- Confirm Password -->
               <label for="password">Confirm Password</label>
               <input id=confirm-password type="password" placeholder="Confirm Password" />
-                <!-- First Name -->
+            </fieldset>
+          </form>
+      </div>
+
+      <div class="logo">
+        
+      </div>
+      
+      <div>
+          <form class="text2" action="text">
+            <fieldset>
+                <!-- Referral -->
               <label for="referral">How did you hear about this event?</label>
               <select id="referral" name="referral">
                 <option value="">-- Please choose an option --</option>
@@ -81,14 +92,14 @@
 
                 <!-- Ticket Type -->
               <label>Ticket Type<span style="color:red">*</span></label>
-                 <div class="radio-group">
+                 <div id="radio-group">
                     <label><input type="radio" name="ticketType" value="general" required> General</label>
                     <label><input type="radio" name="ticketType" value="vip"> VIP</label>
                     <label><input type="radio" name="ticketType" value="student"> Student</label>
                   </div>
 
                 <!-- Newsletter Subscription -->
-                  <div class="checkbox-group">
+                  <div id="checkbox-group">
               <label><input type="checkbox" name="subscribe" value="yes"> Subscribe to our newsletter</label>
                   </div>
 
@@ -101,11 +112,7 @@
               <button type="reset">Clear Form</button>  
             
             </fieldset>
-          </form>
-      
-        
-              
-        </div>
+          </form>       
           
       </div>
 
